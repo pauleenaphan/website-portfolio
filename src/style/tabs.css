@@ -1,0 +1,38 @@
+.tabHeader{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.headerIcons{
+    display: flex;
+    gap: 20px;
+}
+
+nav{
+    background-color: pink;
+    display: flex;
+    border-bottom: 2px solid;
+}
+
+nav button{
+    background-color: rgb(235, 235, 235);
+    border: none;
+    font-size: 20px;
+}
+
+nav p{
+    font-size: 20px;
+}
+
+.navTab{
+    padding: 10px 20px;
+    border-top-right-radius: 15px;
+    border: solid 1px;
+    background-color: rgb(235, 235, 235);
+    
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
