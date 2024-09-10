@@ -1,0 +1,15 @@
+.homePageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.titleContainer{
+    font-size: 25px;
+}
+
+.orangeCatGif{
+    height: 30%;
+    width: auto;
+}

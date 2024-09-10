@@ -1,38 +1,106 @@
+import { useState } from 'react';
 import "../style/tabs.css";
 
-export const Tabs = () =>{
-    return(
+import { FaHome, FaUserCircle, FaFolderOpen, FaTools, FaMailBulk, FaGithub, FaRegSquare } from "react-icons/fa";
+import { GoDash } from "react-icons/go";
+import { FiXSquare } from "react-icons/fi";
+
+import { useNavigate } from "react-router-dom";
+
+export const Tabs = () => {
+    const navigate = useNavigate();
+    const [activeTab, setActiveTab] = useState<string>('home'); // default active tab
+
+    const handleTabClick = (tab: string) => {
+        setActiveTab(tab);
+        navigate(`/${tab}`)
+    };
+
+    return (
         <>
             <div className="tabHeader">
-                <p> Pauleena Phan's Portfolio Site </p>
+                {/* <h1> Pauleena Phan's Portfolio Site </h1> */}
                 <div className="headerIcons">
-                    <p> - </p>
-                    <p> box </p>
-                    <p> X </p>
+                    <GoDash id="iconMinimize"/>
+                    <FaRegSquare id="iconResize"/>
+                    <FiXSquare id="iconClose"/>
                 </div>
             </div>
-            <nav>
-                <div className="navTab">
-                    <button> Home </button>
+            <nav className={activeTab ? 'no-border' : ''}>
+                <div
+                    className={`navTab ${activeTab === 'home' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('home')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaHome className="tabIcon"/>
+                        <p> Home </p>
+                    </div>
                     <p> x </p>
                 </div>
-                <div className="navTab">
-                    <button> About </button>
+                <div
+                    className={`navTab ${activeTab === 'about' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('about')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaUserCircle className="tabIcon"/>
+                        <p> About </p>
+                    </div>
                     <p> x </p>
                 </div>
-                <div className="navTab">
-                    <button> Projects </button>
+                <div
+                    className={`navTab ${activeTab === 'projects' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('projects')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaFolderOpen className="tabIcon"/>
+                        <p> Projects </p>
+                    </div>
                     <p> x </p>
                 </div>
-                <div className="navTab">
-                    <button> Skills </button>
+                <div
+                    className={`navTab ${activeTab === 'skills' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('skills')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaTools className="tabIcon"/>
+                        <p> Skills </p>
+                    </div>
                     <p> x </p>
                 </div>
-                <div className="navTab">
-                    <button> Contact </button>
+                <div
+                    className={`navTab ${activeTab === 'contact' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('contact')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaMailBulk className="tabIcon"/>
+                        <p> Contact </p>
+                    </div>
                     <p> x </p>
                 </div>
+                <div
+                    className={`navTab ${activeTab === 'github' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('github')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaGithub className="tabIcon"/>
+                        <p> Github </p>
+                    </div>
+                    <p> x </p>
+                </div>
+                {/* <div className="navTabPlus">
+                    <p> + </p>
+                </div> */}
+                <div className="borderTab"> </div>
             </nav>
+            {/* <div>
+                <div className="searchIcons">
+                    <p> back btn </p>
+                    <p> refresh btn </p>
+                </div>
+                <div>
+                    <input type="text"></input>
+                </div>
+            </div> */}
         </>
-    )
-}
+    );
+};

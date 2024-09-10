@@ -1,38 +1,87 @@
-.tabHeader{
-    background-color: pink;
+.tabHeader {
+    background-color: #fee8ff;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.headerIcons{
-    display: flex;
-    gap: 20px;
-}
-
-nav{
-    background-color: pink;
-    display: flex;
-    border-bottom: 2px solid;
-}
-
-nav button{
-    background-color: rgb(235, 235, 235);
-    border: none;
-    font-size: 20px;
-}
-
-nav p{
-    font-size: 20px;
-}
-
-.navTab{
+    justify-content: flex-end;
     padding: 10px 20px;
+}
+
+.headerIcons {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+#iconMinimize {
+    font-size: 30px;
+}
+
+#iconResize {
+    font-size: 25px;
+}
+
+#iconClose {
+    font-size: 28px;
+}
+
+nav {
+    align-items: flex-end; /* So the border line stays at the bottom */
+    background-color: #fee8ff;
+    border-bottom: 2px solid;
+    display: flex;
+}
+
+/* Hide the bottom border of nav when a tab is active */
+nav.no-border {
+    border-bottom: none;
+}
+
+nav p {
+    font-size: 20px;
+}
+
+.navTab {
+    background-color: #F5F5F5;
+    border-bottom: 2px solid; /* Default bottom border */
     border-top-right-radius: 15px;
-    border: solid 1px;
-    background-color: rgb(235, 235, 235);
-    
+    border: solid 2px;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    width: 10%;
+    padding: 10px 15px;
+    width: 12%;
+}
+
+/* Remove bottom border for the active tab */
+.navTab.active {
+    border-bottom: none;
+    background-color: #e0e0e0; 
+}
+
+.navTab:hover {
+    background-color: rgb(218, 216, 216);
+}
+
+.borderTab{
+    background-color: black;
+    border-bottom: 2px solid;
+    /* border-width: 30px; */
+    width: 20%;
+    height: 1px;
+    display: flex;
+}
+
+.tabBtnWithIcon {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.tabIcon {
+    font-size: 25px;
+}
+
+.navTabPlus p {
+    cursor: pointer;
+    font-size: 30px; 
+    padding: 0px 10px;
 }
