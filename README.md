@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# Portfolio 2.0 
+This is my second portfolio site to showcase my skills and projects. It's a website inside of a website. (Click on the minimize tab, it's kind of cool)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Deployed Using Netlify](https://main--pauleenaphanportfolio2.netlify.app/)
 
-Currently, two official plugins are available:
+# Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Tools 
+- Typescript
+- React
+- CSS
+- [React Icons](https://react-icons.github.io/react-icons)
+- [Orange Cat Gif](https://tenor.com/view/hearts-cats-hungry-pets-meow-gif-10097081)
+- [Stars Background](https://www.alamy.com/stock-photo-cute-cartoon-colorful-stars-seamless-vector-pattern-background-illustration-147768388.html)
+- [Cartoon Mailbox](https://www.cleanpng.com/png-cartoon-pink-mailbox-smiling-mailbox-happy-mailbox-7900724/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
