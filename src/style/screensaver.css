@@ -1,0 +1,76 @@
+.screenSaverContainer{
+    background-image: url("../assets/windowsbackground.png");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.windowsTaskBar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(58, 58, 58, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.taskBarIcons{
+    font-size: 30px;
+}
+
+.iconTaskLeft, .iconTaskRight{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* !Icon styling */
+
+.iconTaskRight{
+    color: white;
+}
+
+#windowsIcon{
+    color: rgb(0, 120, 212);
+}
+
+#searchTaskIcon{
+    color: white;
+    font-size: 25px;
+}
+
+#edgeIcon{
+    color: #047199;
+    border-bottom: 3px solid gray;
+    cursor: pointer;
+
+    display: inline-block; /* Ensures the transform works correctly */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+#edgeIcon:hover{
+    transform: scale(1.2); /* Scales the element by 20% */
+}
+
+#discordIcon{
+    background-color: #586aaa;
+    color: white;
+    padding: 5px;
+    border-radius: 500px;
+    font-size: 20px;
+}
+
+#steamIcon {
+    color: #1c2a3a;
+    background-color: white;
+    border-radius: 500px;
+}
+
+#spotifyIcon {
+    color: #1DB954;
+    background-color: black;
+    border-radius: 500px;
+}

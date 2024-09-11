@@ -1,25 +1,11 @@
-.homePageContainer{
+.githubPageContainer{
     background-image: url("../assets/starsbackground.jpg");
     background-size: contain;
 
-    display: flex;
-    justify-content: center;
     height:calc(100vh - 177px); /* Full viewport height minus the tab height */  
     margin-top: 177px;
     overflow-y: auto; /* Enables vertical scrolling within this container */
     padding: 50px;
 
     font-size: 20px;
-}
-
-.titleContainer{
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.orangeCatGif{
-    height: 30%;
-    width: 15%;
 }

@@ -1,5 +1,5 @@
 import "./style/index.css"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 import { Tabs } from './component/tabs';
 import { Home } from './pages/home';
@@ -7,22 +7,33 @@ import { About } from './pages/about';
 import { Projects } from './pages/projects';
 import { Skills } from "./pages/skills";
 import { Contact } from "./pages/contact";
+import { Github } from "./pages/github";
+import { Screensaver } from "./pages/screensaver";
 
 function App() {
+  const location = useLocation();
+  const showTabs = location.pathname !== '/screensaver';
 
   return (
-    <Router>
-      <Tabs/>
-        <Routes>
-          <Route path="/home" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/projects" element={<Projects/>}/>
-          <Route path="/skills" element={<Skills/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-        </Routes>
-    </Router>
-    
-  )
+    <>
+      {showTabs && <Tabs />}
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/github" element={<Github />} />
+        <Route path="/screensaver" element={<Screensaver />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default function AppWrapper() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}

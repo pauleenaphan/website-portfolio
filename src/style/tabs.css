@@ -24,14 +24,17 @@
 /* !Top left browser icons */
 #iconMinimize {
     font-size: 30px;
+    cursor: pointer;
 }
 
 #iconResize {
     font-size: 25px;
+    cursor: pointer;
 }
 
 #iconClose {
     font-size: 28px;
+    cursor: pointer;
 }
 
 /* !Nav tab icons and styles */

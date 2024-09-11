@@ -27,7 +27,7 @@ export const Tabs = () => {
             <div className="tabHeader">
                 {/* <h1> Pauleena Phan's Portfolio Site </h1> */}
                 <div className="headerIcons">
-                    <GoDash id="iconMinimize"/>
+                    <GoDash id="iconMinimize" onClick={() =>{navigate("/screensaver")}}/>
                     <FaRegSquare id="iconResize"/>
                     <FiXSquare id="iconClose"/>
                 </div>
