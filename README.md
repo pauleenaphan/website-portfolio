@@ -4,6 +4,7 @@ This is my second portfolio site to showcase my skills and projects. It's a webs
 [Deployed Using Netlify](https://main--pauleenaphanportfolio2.netlify.app/)
 
 # Preview
+![Recording 2024-09-11 at 12 48 18](https://github.com/user-attachments/assets/b95a5b4e-37fd-4f2a-a178-37d17e106d89)
 
 
 # Tools 
