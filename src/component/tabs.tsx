@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import "../style/tabs.css";
 
 import { FaHome, FaUserCircle, FaFolderOpen, 
@@ -21,6 +21,10 @@ export const Tabs = () => {
         setCurrTab("localhost:5173/" + tab)
         navigate(`/${tab}`)
     };
+
+    useEffect(() =>{
+        handleTabClick("home")
+    })
 
     return (
         <div className="tabContainer">
