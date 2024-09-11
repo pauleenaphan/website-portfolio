@@ -24,7 +24,7 @@ export const Tabs = () => {
 
     useEffect(() =>{
         handleTabClick("home")
-    })
+    }, [])
 
     return (
         <div className="tabContainer">
