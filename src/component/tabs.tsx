@@ -18,7 +18,7 @@ export const Tabs = () => {
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
-        setCurrTab("localhost:5173/" + tab)
+        setCurrTab("https://main--pauleenaphanportfolio2.netlify.app/" + tab)
         navigate(`/${tab}`)
     };
 
