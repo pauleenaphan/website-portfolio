@@ -1,8 +1,10 @@
 .homePageContainer{
+    background-image: url("../assets/starsbackground.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    padding: 150px;
+    height: calc(100vh - 177px); /* Full viewport height minus the tab height */
 }
 
 .titleContainer{
@@ -11,5 +13,5 @@
 
 .orangeCatGif{
     height: 30%;
-    width: auto;
+    width: 15%;
 }

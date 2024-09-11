@@ -1,5 +1,16 @@
 *{
     margin: 0;
     font-family: 'Pacifico', cursive;
-    
+}
+
+body {
+    overflow: hidden; 
+}
+
+a{
+    color: black;
+}
+
+li{
+    list-style: none;
 }

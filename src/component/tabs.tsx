@@ -1,23 +1,29 @@
 import { useState } from 'react';
 import "../style/tabs.css";
 
-import { FaHome, FaUserCircle, FaFolderOpen, FaTools, FaMailBulk, FaGithub, FaRegSquare } from "react-icons/fa";
+import { FaHome, FaUserCircle, FaFolderOpen, 
+        FaTools, FaMailBulk, FaGithub, 
+        FaRegSquare, FaArrowLeft, FaBookmark,
+        FaDownload, FaSearch, FaRegStar } from "react-icons/fa";
 import { GoDash } from "react-icons/go";
 import { FiXSquare } from "react-icons/fi";
+import { FaArrowRotateRight, FaGear } from "react-icons/fa6";
 
 import { useNavigate } from "react-router-dom";
 
 export const Tabs = () => {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState<string>('home'); // default active tab
+    const [currTab, setCurrTab] = useState<string>('localhost:5173/home');
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
+        setCurrTab("localhost:5173/" + tab)
         navigate(`/${tab}`)
     };
 
     return (
-        <>
+        <div className="tabContainer">
             <div className="tabHeader">
                 {/* <h1> Pauleena Phan's Portfolio Site </h1> */}
                 <div className="headerIcons">
@@ -92,15 +98,22 @@ export const Tabs = () => {
                 </div> */}
                 <div className="borderTab"> </div>
             </nav>
-            {/* <div>
-                <div className="searchIcons">
-                    <p> back btn </p>
-                    <p> refresh btn </p>
+            <div className="searchBarHeader">
+                <div className="siteIcons">
+                    <FaArrowLeft />
+                    <FaArrowRotateRight />
                 </div>
-                <div>
-                    <input type="text"></input>
+                <div className="searchContainer">
+                    <input type="text" className="searchBar" value={currTab}></input>
+                    <FaSearch id="searchIcon"/>
+                    <FaRegStar id="starIcon"/>
                 </div>
-            </div> */}
-        </>
+                <div className="siteIcons">
+                    <FaBookmark />
+                    <FaGear />
+                    <FaDownload />
+                </div>
+            </div>
+        </div>
     );
 };

@@ -1,5 +1,15 @@
+.tabContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    overflow: hidden; 
+}
+
 .tabHeader {
-    background-color: #fee8ff;
+    background-color: #e7aecb;
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
@@ -11,6 +21,7 @@
     gap: 15px;
 }
 
+/* !Top left browser icons */
 #iconMinimize {
     font-size: 30px;
 }
@@ -23,9 +34,10 @@
     font-size: 28px;
 }
 
+/* !Nav tab icons and styles */
 nav {
     align-items: flex-end; /* So the border line stays at the bottom */
-    background-color: #fee8ff;
+    background-color: #e7aecb;
     border-bottom: 2px solid;
     display: flex;
 }
@@ -84,4 +96,51 @@ nav p {
     cursor: pointer;
     font-size: 30px; 
     padding: 0px 10px;
+}
+
+/* !Search bar icons */
+.searchBarHeader{
+    background-color: #e0e0e0; 
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 20px;
+
+}
+
+.siteIcons{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar{
+    border-radius: 15px;
+    width: 155vh;
+    padding: 7px 35px;
+    border: 2px solid;
+    font-size: 18px;
+
+}
+
+#searchIcon{
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+}
+
+#starIcon{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
 }

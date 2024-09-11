@@ -1,0 +1,57 @@
+.projectPageContainer{
+    background-image: url("../assets/starsbackground.jpg");
+    background-size: contain;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    height:calc(100vh - 177px); /* Full viewport height minus the tab height */  
+    margin-top: 177px;
+    overflow-y: auto; /* Enables vertical scrolling within this container */
+    padding: 50px;
+}
+
+.projectContainer{
+    background-color: rgba(218, 218, 218, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.projectPageContainer > :nth-last-child(2),
+.projectPageContainer > :last-child {
+    margin-bottom: 100px;
+}
+
+.projectContainer img{
+    border-radius: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.projectDescription{
+    width: 90%;
+    font-size: 20px;
+}
+
+.projectTools ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+.projectTools li{
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 5px 10px;
+}
+
+.projectLinks{
+    display: flex;
+    font-size: 25px;
+    gap: 10px;
+    justify-content: flex-end;
+}
