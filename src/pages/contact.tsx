@@ -109,7 +109,6 @@ export const Contact = () =>{
                             <p className="sentMsg">Message has been sent!</p>
                         )}
                     </div>
-                    
                 </form>
             </div>
         </div>
