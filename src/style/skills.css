@@ -1,0 +1,42 @@
+.skillsPageContainer{
+    background-image: url("../assets/starsbackground.jpg");
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height:calc(100vh - 177px); /* Full viewport height minus the tab height */  
+    justify-content: center;
+    margin-top: 177px;
+    overflow-y: auto; /* Enables vertical scrolling within this container */
+    padding: 50px;
+}
+
+.iconContainer{
+    align-items: center;
+    background-color: rgba(218, 218, 218, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    height: 200px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    gap: 10px;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.iconContainer:hover{
+    background-color: rgba(197, 197, 197, 0.6);
+    transform: scale(1.1);
+}
+
+.skillIcon{
+    font-size: 50px;
+}
+
+.skillsPageContainer > :last-child{
+    margin-bottom: 100px;
+}
