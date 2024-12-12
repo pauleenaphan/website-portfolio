@@ -1,21 +1,30 @@
 import "../style/home.css";
 
+import { Tabs } from "../component/tabs";
 import orangecat from "../assets/orangecat.gif";
+
+import { BsStars } from "react-icons/bs";
 
 export const Home = () =>{
     return(
-        <div className="homePageContainer">
-            <div className="titleContainer">
+        <div className="pageOuterContainer">
+            <Tabs/>
+            <div className="homePageContainer">
                 <div className="titleHead">
-                    <h1> Welcome to Pauleena's Porfolio </h1>
-                    <p> Feel free to browse and explore! </p>
+                    <BsStars className="starsIcon"/>
+                    <div>
+                        <h1> Welcome to Pauleena's Monitor </h1>
+                        <p> Feel free to peek around! I won't tell (: </p>
+                    </div>
+                    <BsStars className="starsIcon"/>
                 </div>
-                <div className="portfolioInfo">
+                {/* <div className="portfolioInfo">
                     <p> Copyright @ Pauleena Phan 2024 </p>
                     <a href="https://github.com/pauleenaphan/portfolio2.0"> Github link to this porfolio </a>
-                </div>
+                </div> */}
+                <img className="orangeCatGif" src={orangecat} alt="cartoon orange cat"/>
             </div>
-            <img className="orangeCatGif" src={orangecat} alt="cartoon orange cat"/>
         </div>
+        
     )
 }

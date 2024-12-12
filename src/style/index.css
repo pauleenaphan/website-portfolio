@@ -1,6 +1,9 @@
 *{
     margin: 0;
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
 }
 
 body {
@@ -13,4 +16,15 @@ a{
 
 li{
     list-style: none;
+}
+
+.pageOuterContainer{
+    /* display: grid;
+    grid-template-rows: auto 1fr; */
+    background-image: url("../assets/starsbackground.jpg");
+    background-size: contain; 
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }

@@ -1,38 +1,55 @@
 import "../style/about.css"
-import profilePic from "../assets/profilePic.jpg"
+import profilePic from "../assets/profilePic.jpg";
+import { Tabs } from "../component/tabs";
+
+import { FaCat } from "react-icons/fa";
+import { IoGameController } from "react-icons/io5";
+import { GiChipsBag } from "react-icons/gi";
+import { LuFlower } from "react-icons/lu";
 
 export const About = () =>{
     return(
-        <div className="aboutPageContainer">
-            <div className="aboutHeaderContainer">
-                <img src={profilePic} className="profilePic" alt="graduation photo"/>
-                <div className="aboutHeader">
-                    <div>
-                        <h1> Pauleena Phan </h1>
-                        <p> 22 Years Old • July 23, 2002 </p>
-                    </div>
-                    <div>
-                        <p> California State University of Fullerton • 2020 - 2024 </p>
-                        <p> Computer Science Graduate </p> 
+        <div className="pageOuterContainer">
+            <Tabs/>
+            <div className="aboutPageContainer">
+                <div className="aboutHeaderContainer">
+                    <img src={profilePic} className="profilePic" alt="graduation photo"/>
+                    <div className="aboutHeader">
+                        <div>
+                            <h1> Pauleena Phan </h1>
+                            <div className="captionContainer">
+                                <p> Aspiring Web Developer </p>
+                                <div className="profileIcons">
+                                    <FaCat />
+                                    <IoGameController />
+                                    <GiChipsBag />
+                                    <LuFlower />
+                                </div>
+                                
+                            </div>
+
+                            
+                        </div>
+                        <div>
+                            <p> California State University of Fullerton • 2020 - 2024 </p>
+                            <p> Computer Science Graduate </p> 
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div className="aboutBodyContainer">
+                    <h2> Summary: </h2> 
+                    <p> 
+                        Hi, my name is Pauleena, and I’m a recent Computer Science graduate from California State University, 
+                        Fullerton. During college, I discovered my passion for building websites and set my sights
+                        on becoming a web developer. I love creating websites because they are an integral part of our daily
+                        lives—accessible 24/7 and full of opportunities to innovate and express creativity.
 
-            <div className="aboutBodyContainer">
-                <h2> About: </h2>
-                <br></br>
-                <p> <span className="label">Job Status:</span> Unemployed </p>
-                <p> <span className="label">Career Goals: </span> Becoming a fullstack web developer </p>
-                <p> <span className="label">Hobbies:</span> Gaming, Arts & Crafts, Binging Shows </p>
-                <p> <span className="label">Fun Fact:</span> I have 4 cats </p>
-                <h2> Favorites: </h2>
-                <br></br>
-                <p> <span className="label">Colors:</span> Pink, Black, Light Purple </p>
-                <p> <span className="label">Food:</span> Fried Chicken </p>
-                <p> <span className="label">Animal:</span> Cats, mainly orange ones </p>
-                <p> <span className="label">Game:</span> Teamfight Tactics </p>
-                <p> <span className="label">Movie:</span> Minions </p>
+                        In my free time, I enjoy binge-watching shows, playing games, and spending time with friends. Thank
+                        you for visiting my portfolio, and I hope you find something here that inspires you!
+                    </p>
+                </div>
             </div>
         </div>
+        
     )
 }

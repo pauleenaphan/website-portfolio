@@ -9,12 +9,13 @@ import { GoDash } from "react-icons/go";
 import { FiXSquare } from "react-icons/fi";
 import { FaArrowRotateRight, FaGear } from "react-icons/fa6";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export const Tabs = () => {
     const navigate = useNavigate();
+    const location = useLocation(); // Get current route
     const [activeTab, setActiveTab] = useState<string>('home'); // default active tab
-    const [currTab, setCurrTab] = useState<string>('localhost:5173/home');
+    const [currTab, setCurrTab] = useState<string>("https://main--pauleenaphanportfolio2.netlify.app/home");
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
@@ -22,20 +23,24 @@ export const Tabs = () => {
         navigate(`/${tab}`)
     };
 
-    useEffect(() =>{
-        handleTabClick("home")
-    }, [])
+    // Takes effect when the current route is changed
+    // Makes sure the active tab is being updated on click
+    useEffect(() => {
+        const currentPath = location.pathname.replace('/', ''); // Get the current tab from the URL
+        setActiveTab(currentPath || 'home'); // Default to 'home' if no path
+    }, [location.pathname]);
 
     return (
         <div className="tabContainer">
-            <div className="tabHeader">
-                {/* <h1> Pauleena Phan's Portfolio Site </h1> */}
+            {/* 3 buttons window top */}
+            <div className="tabHeader"> 
                 <div className="headerIcons">
                     <GoDash id="iconMinimize" onClick={() =>{navigate("/screensaver")}}/>
                     <FaRegSquare id="iconResize"/>
                     <FiXSquare id="iconClose"/>
                 </div>
             </div>
+
             <nav className={activeTab ? 'no-border' : ''}>
                 <div
                     className={`navTab ${activeTab === 'home' ? 'active' : ''}`}

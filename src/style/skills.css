@@ -1,14 +1,11 @@
 .skillsPageContainer{
-    background-image: url("../assets/starsbackground.jpg");
-    background-size: contain;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    height:calc(100vh - 177px); /* Full viewport height minus the tab height */  
+    gap: 20px;
+    padding: 40px;
     justify-content: center;
-    margin-top: 177px;
-    overflow-y: auto; /* Enables vertical scrolling within this container */
-    padding: 50px;
+    /* height: fit-content; */
+    overflow: auto;
 }
 
 .iconContainer{
@@ -24,7 +21,7 @@
     text-align: center;
     width: 200px;
     gap: 10px;
-
+    border: 3px solid black;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -35,8 +32,4 @@
 
 .skillIcon{
     font-size: 50px;
-}
-
-.skillsPageContainer > :last-child{
-    margin-bottom: 100px;
 }

@@ -1,13 +1,7 @@
 .projectPageContainer{
-    background-image: url("../assets/starsbackground.jpg");
-    background-size: contain;
-    display: grid;
+    display: grid !important;
     gap: 30px;
     grid-template-columns: 1fr 1fr;
-    height:calc(100vh - 177px); /* Full viewport height minus the tab height */  
-    margin-top: 177px;
-    overflow-y: auto; /* Enables vertical scrolling within this container */
-    padding: 50px;
 }
 
 .projectContainer{
