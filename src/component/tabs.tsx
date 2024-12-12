@@ -15,19 +15,20 @@ export const Tabs = () => {
     const navigate = useNavigate();
     const location = useLocation(); // Get current route
     const [activeTab, setActiveTab] = useState<string>('home'); // default active tab
-    const [currTab, setCurrTab] = useState<string>("https://main--pauleenaphanportfolio2.netlify.app/home");
+    const [currTab, setCurrTab] = useState<string>("https://pauleenaphan/home");
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
-        setCurrTab("https://main--pauleenaphanportfolio2.netlify.app/" + tab)
+        setCurrTab("https://pauleenaphan/" + tab)
         navigate(`/${tab}`)
     };
 
     // Takes effect when the current route is changed
-    // Makes sure the active tab is being updated on click
+    // Makes sure the active tab is being updated on
     useEffect(() => {
         const currentPath = location.pathname.replace('/', ''); // Get the current tab from the URL
         setActiveTab(currentPath || 'home'); // Default to 'home' if no path
+        setCurrTab("https://pauleenaphan/" + currentPath);
     }, [location.pathname]);
 
     return (
