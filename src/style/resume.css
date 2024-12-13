@@ -33,3 +33,16 @@
     border: 3px solid;
     border-radius: 5px;
 }
+
+@media (max-width: 1300px){
+    #resume{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 800px){
+    #resume{
+        width: 100%;
+    }
+}

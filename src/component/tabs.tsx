@@ -43,85 +43,42 @@ export const Tabs = () => {
                 </div>
             </div>
             <nav className={activeTab ? 'no-border' : ''}>
-                <div
-                    className={`navTab ${activeTab === 'home' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('home')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaHome className="tabIcon"/>
-                        <p> Home </p>
-                    </div>
-                    <p> x </p>
-                </div>
                 <NavTab
                     name="Home"
-                    icon={<FaHome />} // FaHome is a React component and will be passed as a ReactNode
+                    icon={<FaHome />} 
                     activeTab={activeTab}
                     onClick={handleTabClick}
                 />
-                <div
-                    className={`navTab ${activeTab === 'about' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('about')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaUserCircle className="tabIcon"/>
-                        <p> About </p>
-                    </div>
-                    <p> x </p>
-                </div>
-                <div
-                    className={`navTab ${activeTab === 'projects' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('projects')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaFolderOpen className="tabIcon"/>
-                        <p> Projects </p>
-                    </div>
-                    <p> x </p>
-                </div>
-                <div
-                    className={`navTab ${activeTab === 'skills' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('skills')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaTools className="tabIcon"/>
-                        <p> Skills </p>
-                    </div>
-                    <p> x </p>
-                </div>
-                <div
-                    className={`navTab ${activeTab === 'contact' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('contact')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaMailBulk className="tabIcon"/>
-                        <p> Contact </p>
-                    </div>
-                    <p> x </p>
-                </div>
-                {/* <div
-                    className={`navTab ${activeTab === 'github' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('github')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaGithub className="tabIcon"/>
-                        <p> Github </p>
-                    </div>
-                    <p> x </p>
-                </div> */}
-                <div
-                    className={`navTab ${activeTab === 'resume' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('resume')}
-                >
-                    <div className="tabBtnWithIcon">
-                        <FaNewspaper className="tabIcon"/>
-                        <p> Resume </p>
-                    </div>
-                    <p> x </p>
-                </div>
-                {/* <div className="navTabPlus">
-                    <p> + </p>
-                </div> */}
+                <NavTab
+                    name="About"
+                    icon={<FaUserCircle />} 
+                    activeTab={activeTab}
+                    onClick={handleTabClick}
+                />
+                <NavTab
+                    name="Projects"
+                    icon={<FaFolderOpen />} 
+                    activeTab={activeTab}
+                    onClick={handleTabClick}
+                />
+                <NavTab
+                    name="Skills"
+                    icon={<FaTools />}
+                    activeTab={activeTab}
+                    onClick={handleTabClick}
+                />
+                <NavTab
+                    name="Contact"
+                    icon={<FaMailBulk />} 
+                    activeTab={activeTab}
+                    onClick={handleTabClick}
+                />
+                <NavTab
+                    name="Resume"
+                    icon={<FaNewspaper />}
+                    activeTab={activeTab}
+                    onClick={handleTabClick}
+                />
                 <div className="borderTab"> </div>
             </nav>
             <div className="searchBarHeader">

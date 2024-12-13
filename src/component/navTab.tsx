@@ -16,9 +16,9 @@ const NavTab: React.FC<NavTabProps> = ({ name, icon, activeTab, onClick }) => {
         >
             <div className="tabBtnWithIcon">
                 {icon && <div className="tabIcon">{icon}</div>}
-                <p>{name}</p>
+                <p className="tabName">{name}</p>
             </div>
-            <p> x </p>
+            <p className="tabXBtn"> x </p>
         </div>
     );
 };

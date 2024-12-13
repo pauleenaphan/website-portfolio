@@ -1,5 +1,5 @@
 import "./style/index.css"
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 
 // import { Tabs } from './component/tabs';
 import { Home } from './pages/home';
@@ -19,7 +19,8 @@ function App() {
     <>
       {showTabs}
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
