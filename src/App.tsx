@@ -19,8 +19,8 @@ function App() {
     <>
       {showTabs}
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/Home" replace />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />

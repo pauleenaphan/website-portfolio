@@ -15,8 +15,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 export const Tabs = () => {
     const navigate = useNavigate();
     const location = useLocation(); // Get current route
-    const [activeTab, setActiveTab] = useState<string>('home'); // default active tab
-    const [currTab, setCurrTab] = useState<string>("https://pauleenaphan/home");
+    const [activeTab, setActiveTab] = useState<string>('Home'); // default active tab
+    const [currTab, setCurrTab] = useState<string>("https://pauleenaphan/Home");
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
@@ -28,7 +28,7 @@ export const Tabs = () => {
     // Makes sure the active tab is being updated on
     useEffect(() => {
         const currentPath = location.pathname.replace('/', ''); // Get the current tab from the URL
-        setActiveTab(currentPath || 'home'); // Default to 'home' if no path
+        setActiveTab(currentPath || 'Home'); // Default to 'home' if no path
         setCurrTab("https://pauleenaphan/" + currentPath);
     }, [location.pathname]);
 
