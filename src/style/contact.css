@@ -1,15 +1,11 @@
 .contactPageContainer{
-    background-image: url("../assets/starsbackground.jpg");
-    background-size: contain;
-    gap: 30px;
-    height:calc(100vh - 177px); /* Full viewport height minus the tab height */  
-    margin-top: 177px;
-    overflow-y: auto; /* Enables vertical scrolling within this container */
-    padding: 50px;
+    overflow: auto;
+    margin-top: 30px;
 }
 
 .contactHeader{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     width: 80%;
     margin: 0 auto;
@@ -21,31 +17,51 @@
     align-items: center;
     gap: 10px;
     font-size: 25px;
-}
 
-.contactPageContainer h1{
     background-color: rgba(218, 218, 218, 0.6);
     border-radius: 5px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 15px 0px;
-    text-align: center;
+    padding: 5px 10px;
+    border: 3px solid;
+    width: fit-content;
+}
+
+.iconContact:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.contactTitle, .contactContainer{
+    background-color: rgba(218, 218, 218, 0.6);
+    border-radius: 5px;
     width: 80%;
+    border: 3px solid;
+    margin: 0 auto;
+}
+
+.contactTitle{
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#sendIcon{
+    font-size: 40px;
 }
 
 .contactContainer{
-    background-color: rgba(218, 218, 218, 0.6);
-    border-radius: 5px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    width: 80%;
-
+    flex-wrap: wrap;
     margin-bottom: 200px;
 }
 
 .emailFormHead{
     display: flex;
+    flex-wrap: wrap;
+    width: auto;
     gap: 20px;
 }
 
@@ -62,6 +78,7 @@
     flex-direction: column;
     font-size: 20px;
     gap: 5px;
+    width: 100%;
 }
 
 .contactContainer input[type=text], .contactContainer textarea{
@@ -102,7 +119,7 @@
     cursor: pointer;
     font-size: 20px;
     padding: 5px 10px;
-    width: 20%;
+    width: fit-content;
 }
 
 .subbtn:hover{

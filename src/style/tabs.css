@@ -53,7 +53,21 @@ nav p {
     display: flex;
     justify-content: space-between;
     padding: 10px 15px;
-    width: 12%;
+    width: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1300px){
+    .navTab{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 900px){
+    .navTab{
+        width: 12%;
+    }
 }
 
 /* Remove bottom border for the active tab */

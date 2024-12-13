@@ -3,9 +3,12 @@ import "../style/contact.css";
 
 import mailBoxImg from "../assets/mailbox.png";
 import { IoMail } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoIosSend } from "react-icons/io";
 
 import emailjs from '@emailjs/browser';
+
+import { Tabs } from "../component/tabs";
 
 export const Contact = () =>{
     type FormData = {
@@ -72,44 +75,54 @@ export const Contact = () =>{
     
     
     return(
-        <div className="contactPageContainer">
-            <div className="contactHeader">
-                <div className="iconContact">
-                    <IoMail />
-                    <p> Pauleena2002@gmail.com </p> 
+        <div className="pageOuterContainer">
+            <Tabs/>
+            <div className="contactPageContainer">
+                <div className="contactHeader">
+                    <a href="mailto:pauleena2002@gmail.com" className="iconContact">
+                        <IoMail />
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pauleena-phan" className="iconContact" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin />
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://github.com/pauleenaphan" className="iconContact" target="_blank" rel="noopener noreferrer">
+                        <FaGithub />
+                        <span>Github</span>
+                    </a>
                 </div>
-                <div className="iconContact">
-                    <FaLinkedin />
-                    <a href="https://www.linkedin.com/in/pauleena-phan"> Pauleena Phan </a>
+                
+                <div className="contactTitle">
+                    <h1> Send Me an Email </h1>
+                    <IoIosSend id="sendIcon"/>
                 </div>
-            </div>
-            
-            <h1> Send Me an Email c:</h1>
-            <div className="contactContainer">
-                <img src={mailBoxImg} className="mailBoxImg" alt="cutemailbox"/>
-                <form className="contactForm" onSubmit={sendMail}>
-                    <div className="emailFormHead">
-                        <div className="labelInput">
-                            <label> Email </label>
-                            <input type="text" placeholder="Your Email" onChange={(e) => {updateFormData("userEmail", e.target.value)}}/>
+                
+                <div className="contactContainer">
+                    <img src={mailBoxImg} className="mailBoxImg" alt="cutemailbox"/>
+                    <form className="contactForm" onSubmit={sendMail}>
+                        <div className="emailFormHead">
+                            <div className="labelInput">
+                                <label> Email </label>
+                                <input type="text" placeholder="Your Email" onChange={(e) => {updateFormData("userEmail", e.target.value)}}/>
+                            </div>
+                            <div className="labelInput">
+                                <label> Subject </label>
+                                <input type="text" placeholder="Purpose of your Email" onChange={(e) => {updateFormData("userSubject", e.target.value)}}/>
+                            </div>                       
                         </div>
                         <div className="labelInput">
-                            <label> Subject </label>
-                            <input type="text" placeholder="Purpose of your Email" onChange={(e) => {updateFormData("userSubject", e.target.value)}}/>
+                            <label> Message </label> 
+                            <textarea placeholder="Your Message here" onChange={(e) => {updateFormData("userMessage", e.target.value)}}/>
                         </div>
-                        
-                    </div>
-                    <div className="labelInput">
-                        <label> Message </label> 
-                        <textarea placeholder="Your Message here" onChange={(e) => {updateFormData("userMessage", e.target.value)}}/>
-                    </div>
-                    <div className="contactStatus">
-                        <button className="subbtn"> Send! </button>
-                        {sentMsgVisible && (
-                            <p className="sentMsg">Message has been sent!</p>
-                        )}
-                    </div>
-                </form>
+                        <div className="contactStatus">
+                            <button className="subbtn"> Send! </button>
+                            {sentMsgVisible && (
+                                <p className="sentMsg">Message has been sent!</p>
+                            )}
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     )

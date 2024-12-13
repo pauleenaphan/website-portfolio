@@ -8,6 +8,7 @@ import { Projects } from './pages/projects';
 import { Skills } from "./pages/skills";
 import { Contact } from "./pages/contact";
 import { Github } from "./pages/github";
+import { Resume } from "./pages/resume";
 import { Screensaver } from "./pages/screensaver";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/github" element={<Github />} />
+        <Route path="/resume" element={<Resume />}/>
         <Route path="/screensaver" element={<Screensaver />} />
       </Routes>
     </>

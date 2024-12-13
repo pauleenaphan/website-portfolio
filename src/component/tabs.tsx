@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import "../style/tabs.css";
+import NavTab from './navTab';
 
 import { FaHome, FaUserCircle, FaFolderOpen, 
-        FaTools, FaMailBulk, FaGithub, 
+        FaTools, FaMailBulk, 
         FaRegSquare, FaArrowLeft, FaBookmark,
         FaDownload, FaSearch, FaRegStar } from "react-icons/fa";
 import { GoDash } from "react-icons/go";
 import { FiXSquare } from "react-icons/fi";
-import { FaArrowRotateRight, FaGear } from "react-icons/fa6";
+import { FaArrowRotateRight, FaGear, FaNewspaper } from "react-icons/fa6";
 
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -41,7 +42,6 @@ export const Tabs = () => {
                     <FiXSquare id="iconClose"/>
                 </div>
             </div>
-
             <nav className={activeTab ? 'no-border' : ''}>
                 <div
                     className={`navTab ${activeTab === 'home' ? 'active' : ''}`}
@@ -53,6 +53,12 @@ export const Tabs = () => {
                     </div>
                     <p> x </p>
                 </div>
+                <NavTab
+                    name="Home"
+                    icon={<FaHome />} // FaHome is a React component and will be passed as a ReactNode
+                    activeTab={activeTab}
+                    onClick={handleTabClick}
+                />
                 <div
                     className={`navTab ${activeTab === 'about' ? 'active' : ''}`}
                     onClick={() => handleTabClick('about')}
@@ -93,13 +99,23 @@ export const Tabs = () => {
                     </div>
                     <p> x </p>
                 </div>
-                <div
+                {/* <div
                     className={`navTab ${activeTab === 'github' ? 'active' : ''}`}
                     onClick={() => handleTabClick('github')}
                 >
                     <div className="tabBtnWithIcon">
                         <FaGithub className="tabIcon"/>
                         <p> Github </p>
+                    </div>
+                    <p> x </p>
+                </div> */}
+                <div
+                    className={`navTab ${activeTab === 'resume' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('resume')}
+                >
+                    <div className="tabBtnWithIcon">
+                        <FaNewspaper className="tabIcon"/>
+                        <p> Resume </p>
                     </div>
                     <p> x </p>
                 </div>
