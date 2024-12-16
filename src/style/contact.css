@@ -45,10 +45,12 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 }
 
 #sendIcon{
     font-size: 40px;
+    padding: 10px;
 }
 
 .contactContainer{
@@ -107,7 +109,6 @@
     gap: 20px;
 }
 
-
 .sentMsg{
     font-size: 20px;
 }
@@ -120,8 +121,33 @@
     font-size: 20px;
     padding: 5px 10px;
     width: fit-content;
+    color: black;
 }
 
 .subbtn:hover{
     background-color: rgba(197, 197, 197, 0.6);
+}
+
+
+@media (max-width: 624px){
+    .mailBoxImg{
+        width: 60%;
+    }
+
+    .contactTitle h1{
+        font-size: 25px;
+    }
+
+    #sendIcon{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 430px){
+    .mailBoxImg{
+        width: 80%;
+    }
+    .contactContainer input[type=text], .contactContainer textarea{
+        font-size: 15px;
+    }
 }

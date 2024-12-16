@@ -19,11 +19,6 @@
     width: 40%;
 }
 
-.projectPageContainer > :nth-last-child(2),
-.projectPageContainer > :last-child {
-    margin-bottom: 100px;
-}
-
 .projectContainer img{
     border-radius: 5px;
     margin-bottom: 15px;

@@ -32,3 +32,46 @@
 .skillIcon{
     font-size: 50px;
 }
+
+@media (max-width: 558px){
+    .iconContainer{
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+    }
+
+    .skillIcon{
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 464px){
+    .iconContainer{
+        width: 120px;
+        height: 120px;
+    }
+
+    .iconName{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 406px){
+    .iconContainer{
+        width: 100px;
+        height: 100px;
+    }
+
+    .skillIcon{
+        font-size: 40px;
+    }
+
+    .iconName{
+        font-size: 18px;
+    }
+}
+
+
+
+

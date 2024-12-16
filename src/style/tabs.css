@@ -58,68 +58,6 @@ nav p {
     gap: 70px;
 }
 
-@media (max-width: 1300px){
-    .navTab{
-        width: fit-content;
-    }
-}
-
-@media (max-width: 1362px){
-    .navTab {
-        width: 80%;
-        padding: 0px 17px;
-        gap: 5px; /* Reduce gap between icon and text */
-    }
-    .tabIcon {
-        font-size: 20px; /* Adjust icon size */
-    }
-}
-
-@media (max-width: 950px){
-    .navTab{
-        width: 90%;
-    }
-    .navTab .tabName{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        max-width: 50px; /* Adjust this to control the visible portion of the text */
-        display: inline-block;
-    }
-}
-
-@media (max-width: 830px){
-    .navTab{
-        width: 10%;
-        padding-right: 25px;
-    }
-    .navTab .tabName{
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        max-width: 40px; /* Adjust this to control the visible portion of the text */
-        display: inline-block;
-    }
-}
-
-@media (max-width: 800px){
-    .navTab .tabName{
-        max-width: 20px; /* Adjust this to control the visible portion of the text */
-    }
-}
-
-@media (max-width: 678px){
-    .navTab .tabName{
-        max-width: 10px; 
-    }
-}
-
-@media (max-width: 617px){
-    .navTab .tabName{
-        display: none;
-    }
-}
-
 /* Remove bottom border for the active tab */
 .navTab.active {
     border-bottom: none;
@@ -201,4 +139,79 @@ nav p {
     position: absolute;
     right: 10px;
     font-size: 25px;
+}
+
+@media (max-width: 1300px){
+    .navTab{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 1362px){
+    .navTab {
+        width: 80%;
+        padding: 0px 17px;
+        gap: 5px; /* Reduce gap between icon and text */
+    }
+    .tabIcon {
+        font-size: 20px; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 950px){
+    .navTab{
+        width: 90%;
+    }
+    .tabName{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 50px; /* Adjust this to control the visible portion of the text */
+        display: inline-block;
+    }
+}
+
+@media (max-width: 830px){
+    .navTab{
+        width: 10%;
+        padding-right: 25px;
+    }
+    .tabName{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 40px; /* Adjust this to control the visible portion of the text */
+        display: inline-block;
+    }
+}
+
+@media (max-width: 800px){
+    .tabName{
+        max-width: 20px; /* Adjust this to control the visible portion of the text */
+    }
+}
+
+@media (max-width: 678px){
+    .tabName{
+        max-width: 10px; 
+    }
+}
+
+@media (max-width: 617px){
+    .tabName{
+        display: none;
+    }
+
+    .tabIcon{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .navTab{
+        width: 5%;
+    }
+    /* .tabIcon{
+        font-size: 20px;
+    } */
 }
