@@ -6,6 +6,7 @@ import weatherWatcherImg from "../assets/projects/weatherwatcher.png";
 import etchASketchImg from "../assets/projects/etchasketch.png";
 import oldMacsFarmImg from "../assets/projects/oldmacsfarm.png";
 import catJokesImg from "../assets/projects/cat-jokes.png";
+import pastdesertsImg from "../assets/projects/pastdeserts.png";
 
 // File to hold all of my projects
 export interface Project {
@@ -44,7 +45,7 @@ export const projects: Project[] = [
     },
     {
         name: "cat-jokes",
-        description: "My first npm-package that allows users to grab cat jokes",
+        description: "I created my first npm package that allows users to retrieve cat jokes. Through this project, I learned the process of creating and publishing an npm package",
         githubLink: "https://github.com/pauleenaphan/cat-jokes",
         liveSiteLink: "https://www.npmjs.com/package/cat-jokes?activeTab=readme",
         image: catJokesImg,
@@ -67,6 +68,14 @@ export const projects: Project[] = [
         tools: ["HTML", "CSS", "React", "Javascript", "Firebase"]
     },
     {
+        name: "Past-Deserts",
+        description: "A website that tracks my baking journey starting near the end of 2024.",
+        githubLink: "https://github.com/pauleenaphan/past-deserts",
+        liveSiteLink: "https://past-deserts.netlify.app/",
+        image: pastdesertsImg,
+        tools: ["React", "CSS", "Firebase"]
+    },
+    {
         name: "Weather Watcher",
         description: "A weather page that allows users to enter a city to find the weather conditions in that area. This project uses a weather API.",
         githubLink: "https://github.com/pauleenaphan/weather-app",
@@ -81,5 +90,5 @@ export const projects: Project[] = [
         liveSiteLink: "https://pauleenaphan.github.io/Etch-a-Sketch/",
         image: etchASketchImg, // Replace with the correct path to the image
         tools: ["HTML", "CSS", "Javascript"]
-    }
+    },
 ];
