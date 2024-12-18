@@ -7,7 +7,8 @@ import etchASketchImg from "../assets/projects/etchasketch.png";
 import oldMacsFarmImg from "../assets/projects/oldmacsfarm.png";
 import catJokesImg from "../assets/projects/cat-jokes.png";
 import pastdesertsImg from "../assets/projects/pastdeserts.png";
-
+import firstlandingImg from "../assets/projects/firstlanding.png";
+import discordPortfolioImg from "../assets/projects/discordportfolio.png";
 // File to hold all of my projects
 export interface Project {
     name: string;
@@ -66,6 +67,22 @@ export const projects: Project[] = [
         liveSiteLink: "https://cattagram.netlify.app/",
         image: cattagramImg, // Replace with the correct path to the image
         tools: ["HTML", "CSS", "React", "Javascript", "Firebase"]
+    },
+    {
+        name: "Third Porfolio Site",
+        description: "Third portfolio site as a discord profile. Mobile friend and compact",
+        githubLink: "https://github.com/pauleenaphan/portfolio3.0",
+        liveSiteLink: "https://pauleenaphan.netlify.app/",
+        image: discordPortfolioImg,
+        tools: ["Typescript", "CSS"]
+    },
+    {
+        name: "First Landing",
+        description: "A collection of landing pages that I made to help me practice and learn new frontend technologies",
+        githubLink: "https://github.com/pauleenaphan/first-landing/tree/main",
+        liveSiteLink: "https://firstlandings.netlify.app/",
+        image: firstlandingImg,
+        tools: ["React", "CSS"]
     },
     {
         name: "Past-Deserts",
