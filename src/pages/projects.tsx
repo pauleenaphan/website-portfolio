@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../style/projects.css";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { projects } from "../data/projects";
