@@ -26,7 +26,7 @@ export const projects: Project[] = [
         githubLink: "https://github.com/pauleenaphan/Meow-Pop",
         liveSiteLink: "https://main--meowpop.netlify.app/",
         image: meowPopImg, // Replace with the correct path to the image
-        tools: ["MongoDb", "Express.js", "React", "Node.js", "Typescript", "Amazon S3"]
+        tools: ["MongoDB", "Express.js", "React", "Node.js", "Typescript", "Amazon S3"]
     },
     {
         name: "BlogWog",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         githubLink: "https://github.com/pauleenaphan/blog-api",
         liveSiteLink: "https://main--blogwog.netlify.app/",
         image: blogWogimg, // Replace with the correct path to the image
-        tools: ["MongoDb", "Express.js", "React", "Node.js"]
+        tools: ["MongoDB", "Express.js", "React", "Node.js"]
     },
     {
         name: "Mental Me",

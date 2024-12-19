@@ -71,3 +71,38 @@
         font-size: 20px;
     }
 }
+
+/* ! Selector Tools */
+.toolSelectorOuterContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    align-items: flex-start;
+}
+
+.toolSelectorOuterContainer p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.toolSelectorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+}
+
+.toolSelectorBtn{
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgba(218, 218, 218, 0.8);
+    cursor: pointer;
+}
+
+
+.toolSelectorBtn:hover{
+    opacity: 0.8;
+}
