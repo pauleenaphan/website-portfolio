@@ -1,4 +1,4 @@
-# Portfolio 2.0 
+# Website Portfolio
 This is my second portfolio site to showcase my skills and projects. It's a website inside of a website. (Click on the minimize tab, it's kind of cool)
 
 [Deployed Using Netlify](https://main--pauleenaphanportfolio2.netlify.app/)
