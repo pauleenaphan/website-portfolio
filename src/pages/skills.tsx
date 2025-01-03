@@ -4,7 +4,7 @@ import { Tabs } from "../component/tabs";
 
 import { FaHtml5,FaCss3Alt, FaJs, FaNodeJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
-import { RiFirebaseLine } from "react-icons/ri";
+import { RiFirebaseLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
 
 export const Skills = () =>{
@@ -55,6 +55,10 @@ export const Skills = () =>{
                 <div className="iconContainer">
                     <SiTypescript className="skillIcon"/>
                     <p className="iconName"> Typescript </p>
+                </div>
+                <div className="iconContainer">
+                    <RiTailwindCssFill className="skillIcon"/>
+                    <p className="iconName"> Tailwind CSS </p>
                 </div>
             </div>
         </div>
