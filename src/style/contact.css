@@ -83,7 +83,7 @@
     width: 100%;
 }
 
-.contactContainer input[type=text], .contactContainer textarea{
+.contactContainer input[type=text], input[type=email], .contactContainer textarea{
     border-radius: 5px;
     border: 2px solid;
     font-size: 20px;

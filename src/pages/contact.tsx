@@ -104,16 +104,16 @@ export const Contact = () =>{
                         <div className="emailFormHead">
                             <div className="labelInput">
                                 <label> Email </label>
-                                <input type="text" placeholder="Your Email" onChange={(e) => {updateFormData("userEmail", e.target.value)}}/>
+                                <input type="email" placeholder="Your Email" required onChange={(e) => {updateFormData("userEmail", e.target.value)}}/>
                             </div>
                             <div className="labelInput">
                                 <label> Subject </label>
-                                <input type="text" placeholder="Purpose of your Email" onChange={(e) => {updateFormData("userSubject", e.target.value)}}/>
+                                <input type="text" placeholder="Purpose of your Email" required onChange={(e) => {updateFormData("userSubject", e.target.value)}}/>
                             </div>                       
                         </div>
                         <div className="labelInput">
                             <label> Message </label> 
-                            <textarea placeholder="Your Message here" onChange={(e) => {updateFormData("userMessage", e.target.value)}}/>
+                            <textarea placeholder="Your Message here" required onChange={(e) => {updateFormData("userMessage", e.target.value)}}/>
                         </div>
                         <div className="contactStatus">
                             <button className="subbtn"> Send! </button>
