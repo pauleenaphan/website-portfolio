@@ -57,3 +57,12 @@
     font-size: 20px;
     margin-bottom: 30px;
 }
+
+@media(max-width: 450px){
+    .profilePic{
+        margin: 0 auto;
+    }
+    .aboutHeaderContainer, .aboutBodyContainer{
+        width: 90%;
+    }
+}

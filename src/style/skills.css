@@ -47,10 +47,14 @@
 }
 
 
-@media (max-width: 464px){
+@media (max-width: 450px){
+    .skillsPageContainer{
+        padding: 30px;
+    }
+
     .iconContainer{
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
     }
 
     .iconName{
@@ -58,9 +62,13 @@
     }
 }
 
-@media (max-width: 406px){
+/* @media (max-width: 450px){
+    .skillsPageContainer{
+        padding: 30px;
+    }
+
     .iconContainer{
-        width: 100px;
+        width: 130px;
         height: 100px;
     }
 
@@ -71,7 +79,7 @@
     .iconName{
         font-size: 18px;
     }
-}
+} */
 
 
 

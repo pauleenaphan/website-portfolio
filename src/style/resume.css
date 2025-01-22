@@ -46,3 +46,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 800px){
+    .resumePageContainer{
+        padding: 30px;
+    }
+}
