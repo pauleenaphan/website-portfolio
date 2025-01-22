@@ -4,6 +4,7 @@
     gap: 10px;
     padding: 30px;
     overflow: auto;
+    margin-bottom: 50px;
 }
 
 .aboutHeaderContainer, .aboutBodyContainer{
