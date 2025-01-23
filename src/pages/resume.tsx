@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Tabs } from "../component/tabs";
 import "../style/resume.css";
 
@@ -7,6 +9,10 @@ import resumeImg from "../assets/PauleenaPhanResumeImg.jpg";
 import resumePDF from "../assets/PauleenaPhanResumePDF.pdf";
 
 export const Resume = () =>{
+    useEffect(() => {
+        document.title = "Pauleena Phan | Resume";
+    }, []);
+
     return(
         <div className="pageOuterContainer">
             <Tabs/>

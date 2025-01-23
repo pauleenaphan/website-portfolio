@@ -1,11 +1,17 @@
 import "../style/home.css";
 
+import { useEffect } from "react";
+
 import { Tabs } from "../component/tabs";
 import orangecat from "../assets/orangecat.gif";
 
 import { BsStars } from "react-icons/bs";
 
 export const Home = () =>{
+    useEffect(() => {
+        document.title = "Pauleena Phan | Home";
+    }, []);
+
     return(
         <div className="pageOuterContainer">
             <Tabs/>

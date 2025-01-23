@@ -72,6 +72,10 @@ export const Contact = () =>{
         return () => clearTimeout(timer);
         }
     }, [sentMsgVisible]);
+
+    useEffect(() => {
+        document.title = "Pauleena Phan | Contact ";
+    }, []);
     
     
     return(

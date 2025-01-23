@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import "../style/skills.css";
 
 import { Tabs } from "../component/tabs";
@@ -8,6 +10,10 @@ import { RiFirebaseLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
 
 export const Skills = () =>{
+    useEffect(() => {
+        document.title = "Pauleena Phan | Skills";
+    }, []);
+
     return(
         <div className="pageOuterContainer">
             <Tabs/>

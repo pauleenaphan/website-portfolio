@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import "../style/projects.css";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
 import { projects } from "../data/projects";
@@ -8,6 +9,11 @@ import { ToolSelectBtn } from "../component/tool";
 
 
 export const Projects = () => {
+    useEffect(() => {
+        document.title = "Pauleena Phan | Projects";
+    }, []);
+
+
     // State to keep track of selected tools
     const [selectedTools, setSelectedTools] = useState<string[]>([]);
 

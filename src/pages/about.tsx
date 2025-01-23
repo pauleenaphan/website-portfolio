@@ -1,4 +1,6 @@
-import "../style/about.css"
+import { useEffect } from "react";
+
+import "../style/about.css";
 import profilePic from "../assets/profilePic.jpg";
 import { Tabs } from "../component/tabs";
 
@@ -8,6 +10,10 @@ import { GiChipsBag } from "react-icons/gi";
 import { LuFlower } from "react-icons/lu";
 
 export const About = () =>{
+    useEffect(() => {
+        document.title = "Pauleena Phan | About ";
+    }, []);
+
     return(
         <div className="pageOuterContainer">
             <Tabs/>
