@@ -90,7 +90,7 @@ export const projects: Project[] = [
         githubLink: "https://github.com/pauleenaphan/past-deserts",
         liveSiteLink: "https://past-deserts.netlify.app/",
         image: pastdesertsImg,
-        tools: ["React", "CSS", "Firebase"]
+        tools: ["React", "CSS"]
     },
     {
         name: "Weather Watcher",
