@@ -69,7 +69,7 @@ export const projects: Project[] = [
         tools: ["HTML", "CSS", "React", "Javascript", "Firebase"]
     },
     {
-        name: "Third Porfolio Site",
+        name: "Discord Porfolio Site",
         description: "Third portfolio site as a discord profile. Mobile friend and compact",
         githubLink: "https://github.com/pauleenaphan/portfolio3.0",
         liveSiteLink: "https://pauleenaphan.netlify.app/",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
         name: "Past-Deserts",
         description: "A website that tracks my baking journey starting near the end of 2024.",
         githubLink: "https://github.com/pauleenaphan/past-deserts",
-        liveSiteLink: "https://past-deserts.netlify.app/",
+        liveSiteLink: "https://pastdeserts.netlify.app/",
         image: pastdesertsImg,
         tools: ["React", "CSS"]
     },
