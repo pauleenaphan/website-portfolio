@@ -21,23 +21,24 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    column-gap: 10px;
     justify-content: space-between;
     padding: 30px;
     border: 3px solid;
-    width: 28%;
+    flex: 1 1 25%;
+    min-width: 300px;
 }
 
 .projectContainer img{
     border-radius: 5px;
-    margin-bottom: 15px;
     width: 100%;
     border: 3px solid;
 }
 
 .projectDescription{
-    width: 90%;
+    width: 100%;
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .projectTools ul{
@@ -106,17 +107,7 @@
     opacity: 0.8;
 }
 
-@media(max-width: 1500px){
-    .projectContainer{
-        width: 44%;
-    }
-}
-
-
 @media (max-width: 880px) {
-    .projectContainer{
-        width: 100%;
-    }
     .titleHead p{
         font-size: 20px;
     }
@@ -125,9 +116,6 @@
 @media(max-width: 450px){
     .projectPageContainer{
         padding: 30px;
-    }
-    .projectContainer{
-        width: 100%;
     }
     .githubIcon{
         font-size: 28px;
