@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "../style/skills.css";
 
@@ -12,12 +14,13 @@ import { SiExpress, SiMongodb, SiTypescript } from "react-icons/si";
 export const Skills = () =>{
     useEffect(() => {
         document.title = "Pauleena Phan | Skills";
+        AOS.init({ duration: 500, once: false });
     }, []);
 
     return(
         <div className="pageOuterContainer">
             <Tabs/>
-            <div className="skillsPageContainer">
+            <div className="skillsPageContainer" data-aos="fade-in">
                 <div className="iconContainer">
                     <FaHtml5 className="skillIcon"/>
                     <p className="iconName"> HTML </p>

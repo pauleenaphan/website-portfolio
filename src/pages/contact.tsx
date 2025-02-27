@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "../style/contact.css";
 
 import mailBoxImg from "../assets/mailbox.png";
@@ -74,7 +76,8 @@ export const Contact = () =>{
     }, [sentMsgVisible]);
 
     useEffect(() => {
-        document.title = "Pauleena Phan | Contact ";
+        document.title = "Pauleena Phan | Contact Me";
+        AOS.init({ duration: 500, once: false });
     }, []);
     
     
@@ -82,7 +85,7 @@ export const Contact = () =>{
         <div className="pageOuterContainer">
             <Tabs/>
             <div className="contactPageContainer">
-                <div className="contactHeader">
+                <div className="contactHeader" data-aos="slide-down">
                     <a href="mailto:pauleena2002@gmail.com" className="iconContact">
                         <IoMail />
                         <span>Email</span>

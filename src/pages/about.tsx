@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "../style/about.css";
 import profilePic from "../assets/profilePic.jpg";
@@ -12,13 +14,15 @@ import { LuFlower } from "react-icons/lu";
 export const About = () =>{
     useEffect(() => {
         document.title = "Pauleena Phan | About ";
+        AOS.init({ duration: 500, once: false });
     }, []);
+    
 
     return(
         <div className="pageOuterContainer">
             <Tabs/>
             <div className="aboutPageContainer">
-                <div className="aboutHeaderContainer">
+                <div className="aboutHeaderContainer" data-aos="slide-down">
                     <img src={profilePic} className="profilePic" alt="graduation photo"/>
                     <div className="aboutHeader">
                         <div>
@@ -42,7 +46,7 @@ export const About = () =>{
                         </div>
                     </div>
                 </div>
-                <div className="aboutBodyContainer">
+                <div className="aboutBodyContainer" data-aos="slide-up" data-aos-offset="10">
                     <h2> Summary: </h2> 
                     <p> 
                         Hi, my name is Pauleena, and I’m a recent Computer Science graduate from California State University, 

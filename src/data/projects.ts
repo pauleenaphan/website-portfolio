@@ -1,4 +1,5 @@
 import meowPopImg from "../assets/projects/meowpop.png";
+import setFinderImg from "../assets/projects/setfinder.png";
 import blogWogimg from "../assets/projects/blogwog.png";
 import cattagramImg from "../assets/projects/cattagram.png";
 import mentalMeImg from "../assets/projects/mentalme.png";
@@ -27,6 +28,14 @@ export const projects: Project[] = [
         liveSiteLink: "https://main--meowpop.netlify.app/",
         image: meowPopImg, // Replace with the correct path to the image
         tools: ["MongoDB", "Express.js", "React", "Node.js", "Typescript", "Amazon S3"]
+    },
+    {
+        name: "SetFinder",
+        description: "SetFinder is a platform that allows users to track and manage all their favorite EDM sets in one place.",
+        githubLink: "https://github.com/pauleenaphan/set-finder",
+        liveSiteLink: "https://setfinder.netlify.app/",
+        image: setFinderImg,
+        tools: ["Next.js", "Firebase", "Youtube API", "Soundcloud API", "Musicbrainz API"]
     },
     {
         name: "BlogWog",
@@ -97,7 +106,7 @@ export const projects: Project[] = [
         description: "A weather page that allows users to enter a city to find the weather conditions in that area. This project uses a weather API.",
         githubLink: "https://github.com/pauleenaphan/weather-app",
         liveSiteLink: "https://pauleenaphan.github.io/weather-app/src/index.html",
-        image: weatherWatcherImg, // Replace with the correct path to the image
+        image: weatherWatcherImg, 
         tools: ["HTML", "Tailwind CSS", "Javascript", "Weather API"]
     },
     {

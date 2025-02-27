@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import "../style/projects.css";
 import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
@@ -11,6 +13,7 @@ import { ToolSelectBtn } from "../component/tool";
 export const Projects = () => {
     useEffect(() => {
         document.title = "Pauleena Phan | Projects";
+        AOS.init({ duration: 500, once: false });
     }, []);
 
 
@@ -58,7 +61,7 @@ export const Projects = () => {
                     </div>
                     
                 </div>
-                <div className="projectOuterContainer">
+                <div className="projectOuterContainer" data-aos="fade-up">
                     {filteredProjects.map((project, index) => (
                     <div className="projectContainer" key={index}>
                         <div className="projectInfo">
