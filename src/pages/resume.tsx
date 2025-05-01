@@ -7,7 +7,7 @@ import "../style/resume.css";
 
 import { IoMdDownload } from "react-icons/io";
 
-import resumeImg from "../assets/PauleenaPhanResumeImg.jpg";
+import resumeImg from "../assets/PauleenaPhanResumeImg.jpeg";
 import resumePDF from "../assets/PauleenaPhanResumePDF.pdf";
 
 export const Resume = () =>{
