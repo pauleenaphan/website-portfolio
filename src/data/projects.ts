@@ -10,6 +10,7 @@ import catJokesImg from "../assets/projects/cat-jokes.png";
 import pastdesertsImg from "../assets/projects/pastdeserts.png";
 import firstlandingImg from "../assets/projects/firstlanding.png";
 import discordPortfolioImg from "../assets/projects/discordportfolio.png";
+import chipBoardImg from "../assets/projects/chipBoard.png";
 // File to hold all of my projects
 export interface Project {
     name: string;
@@ -36,6 +37,14 @@ export const projects: Project[] = [
         liveSiteLink: "https://setfinder.netlify.app/",
         image: setFinderImg,
         tools: ["Next.js", "Firebase", "Youtube API", "Soundcloud API", "Musicbrainz API"]
+    },
+    {
+        name: "ChipBoard",
+        description: "Chipboard is a webapp where users create a board and rate chips they have tried",
+        githubLink: "https://github.com/pauleenaphan/ChipBoard",
+        liveSiteLink: "https://chip-board.vercel.app/",
+        image: chipBoardImg,
+        tools: ["T3 Stack, Supabase"]
     },
     {
         name: "BlogWog",
